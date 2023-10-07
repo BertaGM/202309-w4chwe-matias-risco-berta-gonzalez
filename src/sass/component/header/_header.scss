@@ -1,7 +1,46 @@
+@use "../../variables/variables";
+@use "../../core/globals";
+
+.main {
+  padding: 80px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 320px;
 
   &--reverse {
     flex-direction: row-reverse;
+  }
+}
+
+.title-container__title {
+  font-family: variables.$main-font-family;
+  color: variables.$primary-font-color;
+  font-size: 40px;
+  line-height: normal;
+  align-self: stretch;
+}
+
+.text-container__text {
+  font-family: variables.$secondary-font-family;
+  color: variables.$secondary-font-color;
+  font-size: 18px;
+  line-height: normal;
+  align-self: stretch;
+}
+
+.header__color-line {
+  background-color: variables.$primary-dark-color;
+  height: 3px;
+  width: 227px;
+
+  &__gap-line {
+    gap: 30px;
   }
 }
