@@ -1,7 +1,7 @@
 @use "../../variables/variables";
 
 .button {
-  color: variables.$secondary--font-color;
+  color: variables.$secondary-font-color;
 
   &--trasparent {
     background-color: transparent;
@@ -9,11 +9,11 @@
 
   &--solid {
     &--orange {
-      background-color: variables.$primary--dark-color;
+      background-color: variables.$primary-dark-color;
     }
 
     &--black {
-      background-color: variables.$primary--font-color;
+      background-color: variables.$primary-font-color;
     }
   }
   &--small {
