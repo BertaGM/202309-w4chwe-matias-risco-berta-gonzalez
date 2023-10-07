@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build-sass": "sass src/sass/core/_reset.scss public/styles/styles.css",
+    "build-sass:dev": "sass --watch src/styles.scss public/styles/styles.css"
   },
   "author": "",
   "license": "ISC",
