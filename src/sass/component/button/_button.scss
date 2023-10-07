@@ -1,8 +1,8 @@
 @use "../../variables/variables";
 
 .button {
-  color: variables.$secondary-font-color;
-
+  color: #fff;
+  font: optional;
   &--trasparent {
     background-color: transparent;
   }
