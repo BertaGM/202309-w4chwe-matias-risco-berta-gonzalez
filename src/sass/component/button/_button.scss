@@ -1,0 +1,10 @@
+@use "../../variables/variables";
+
+.button {
+  color: variables.$secondary--font-color;
+  border-radius: 12px;
+
+  &--trasparent {
+    background-color: transparent;
+  }
+}
