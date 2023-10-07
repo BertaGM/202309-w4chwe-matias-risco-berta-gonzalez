@@ -1,0 +1,15 @@
+@use "variables/variables";
+
+html {
+  font-family: variables.$main-font-family, variables.$secondary-font-family;
+  color: variables.$primary-soft-color, variables.$primary--dark-color,
+    variables.$secondary-soft-color, variables.$secondary-dark-color;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
