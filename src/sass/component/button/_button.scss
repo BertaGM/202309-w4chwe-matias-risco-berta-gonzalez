@@ -2,9 +2,44 @@
 
 .button {
   color: variables.$secondary--font-color;
-  border-radius: 12px;
 
   &--trasparent {
     background-color: transparent;
+  }
+
+  &--solid {
+    &--orange {
+      background-color: variables.$primary--dark-color;
+    }
+
+    &--black {
+      background-color: variables.$primary--font-color;
+    }
+  }
+  &--small {
+    border-radius: 12px;
+    padding: 28px 20px;
+    gap: 4px;
+  }
+
+  &--medium {
+    border-radius: 12px;
+    padding: 20px 40px;
+  }
+
+  &--big {
+    width: 170px;
+    height: 216px;
+    border-radius: 0 20px 20px 0;
+    padding: 60px 20px;
+    gap: 12px;
+  }
+
+  &--rotate-anticlockwise {
+    transform: rotate(90deg);
+  }
+
+  &--rotate-clockwise {
+    transform: rotate(90deg);
   }
 }
