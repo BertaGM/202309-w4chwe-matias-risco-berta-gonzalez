@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "build-sass": "sass src/sass/core/_reset.scss public/styles/styles.css",
+    "build-sass": "sass src/sass/styles.scss public/styles/styles.css",
     "build-sass:dev": "sass src/sass/styles.scss public/styles/styles.css -w"
   },
   "author": "",
