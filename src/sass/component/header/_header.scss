@@ -1,46 +1,130 @@
 @use "../../variables/variables";
 @use "../../core/globals";
+@use "../button/button";
 
-.main {
-  padding: 80px 16px;
-  display: flex;
-  flex-direction: column;
-}
+@media (max-width: 767px) {
+  .main {
+    padding: 80px 16px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 320px;
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 320px;
 
-  &--reverse {
-    flex-direction: row-reverse;
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .title {
+    font-family: variables.$main-font-family;
+    color: variables.$primary-font-color;
+    font-size: 40px;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  .text {
+    font-family: variables.$secondary-font-family;
+    color: variables.$secondary-font-color;
+    font-size: 18px;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  .color-line {
+    background-color: variables.$primary-dark-color;
+    height: 3px;
+    width: 227px;
+    gap: 20px;
+
+    &__gap-line {
+      gap: 30px;
+    }
   }
 }
 
-.title-container__title {
-  font-family: variables.$main-font-family;
-  color: variables.$primary-font-color;
-  font-size: 40px;
-  line-height: normal;
-  align-self: stretch;
-}
+@media (min-width: 767px) {
+  .main {
+    padding: 140px 32px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.text-container__text {
-  font-family: variables.$secondary-font-family;
-  color: variables.$secondary-font-color;
-  font-size: 18px;
-  line-height: normal;
-  align-self: stretch;
-}
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
 
-.header__color-line {
-  background-color: variables.$primary-dark-color;
-  height: 3px;
-  width: 227px;
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
 
-  &__gap-line {
-    gap: 30px;
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .title {
+    font-family: variables.$main-font-family;
+    color: variables.$primary-font-color;
+    font-size: 64px;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  .text {
+    font-family: variables.$secondary-font-family;
+    color: variables.$secondary-font-color;
+    font-size: 24px;
+    line-height: normal;
+    align-self: stretch;
+  }
+
+  .color-line {
+    background-color: variables.$primary-dark-color;
+    height: 3px;
+    width: 365px;
+    gap: 20px;
+
+    &__gap-line {
+      gap: 30px;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 32px;
+    align-self: stretch;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .button--small--right {
+    display: flex;
+    padding: 28px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .button--small-left {
+    display: flex;
+    padding: 28px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
   }
 }
