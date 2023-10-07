@@ -1,8 +1,8 @@
-@use "variables/variables";
+@use "../variables/variables";
 
 html {
   font-family: variables.$main-font-family;
-  color: variables.$primary--dark-color;
+  color: variables.$primary-dark-color;
 }
 
 img {
