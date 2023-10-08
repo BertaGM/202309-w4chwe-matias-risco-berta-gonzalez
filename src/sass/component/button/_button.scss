@@ -10,18 +10,26 @@
   &--solid {
     &--orange {
       background-color: variables.$primary-dark-color;
+      &::before {
+        -webkit-text-stroke: 1.5px variables.$primary-dark-color;
+      }
     }
 
     &--black {
       background-color: variables.$primary-font-color;
+      &::before {
+        -webkit-text-stroke: 1.5px variables.$primary-font-color;
+      }
     }
   }
   &--small {
+    text-align: center;
+    align-items: center;
     width: 60px;
     height: 66px;
     border-radius: 12px;
-    padding: 28px 20px;
-    gap: 4px;
+    font-size: 27px;
+    padding: 20px 10px;
   }
 
   &--medium {
