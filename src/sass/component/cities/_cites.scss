@@ -22,6 +22,7 @@
     height: 661px;
     object-fit: cover;
     position: relative;
+    filter: sepia(0.2%);
 
     &__image {
       &__special-offer {
@@ -78,6 +79,7 @@
     height: 320px;
     object-fit: cover;
     position: relative;
+    filter: sepia(0.2%);
 
     &__text {
       display: flex;
