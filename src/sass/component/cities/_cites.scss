@@ -23,6 +23,14 @@
     object-fit: cover;
     position: relative;
 
+    &__image {
+      &__special-offer {
+        width: 437.33px;
+        height: 286px;
+        border-radius: 26px 26px 0 0;
+      }
+    }
+
     &__text {
       display: flex;
       flex-direction: column;
