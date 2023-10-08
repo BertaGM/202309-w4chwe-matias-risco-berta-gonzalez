@@ -59,13 +59,29 @@
   align-items: center;
   gap: 32px;
   align-self: stretch;
-  margin-top: 100px;
-}
 
-@media (max-width: 767px) {
-  .button-container__phone {
-    &--hide {
-      display: none;
+  @media (max-width: 767px) {
+    &__phone {
+      &--hide {
+        display: none;
+      }
+
+      &--bottom {
+        display: flex;
+        justify-content: center;
+        //align-items: center;
+        gap: 32px;
+        align-self: stretch;
+        padding-bottom: 80px;
+      }
+    }
+  }
+
+  @media (min-width: 767px) {
+    &__desktop {
+      &--hide {
+        display: none;
+      }
     }
   }
 }
