@@ -28,6 +28,27 @@
     object-fit: cover;
     position: relative;
     filter: sepia(0.2%);
+    &__special-offer {
+      &__container-button {
+        display: flex;
+
+        gap: 69.33px;
+
+        &__text-container {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          &__text {
+            color: variables.$primary-font-color;
+          }
+
+          &__price {
+            font-size: 40px;
+            font-family: variables.$secondary-font-family;
+          }
+        }
+      }
+    }
 
     &__image {
       &__special-offer {
@@ -98,7 +119,6 @@
     }
   }
 }
-
 @media (max-width: 767px) {
   .cities {
     display: flex;
