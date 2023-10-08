@@ -12,7 +12,6 @@
     padding-bottom: 100px;
 
     &--special-offers {
-      justify-content: center;
       gap: 32px;
     }
 
@@ -31,22 +30,6 @@
     &__special-offer {
       &__container-button {
         display: flex;
-
-        gap: 69.33px;
-
-        &__text-container {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          &__text {
-            color: variables.$primary-font-color;
-          }
-
-          &__price {
-            font-size: 40px;
-            font-family: variables.$secondary-font-family;
-          }
-        }
       }
     }
 
@@ -94,11 +77,23 @@
       color: variables.$secondary-font-color;
     }
 
+    &__star-container {
+      display: flex;
+      padding-top: 8px;
+      gap: 4px;
+    }
+
+    &__text-star {
+      color: variables.$star-background-color;
+      width: 24px;
+      height: 24px;
+    }
+
     &__text-offers {
       color: variables.$primary-font-color;
       font-family: variables.$secondary-font-family;
       font-size: 18px;
-      padding: 24px;
+      padding: 24px 0;
     }
 
     &__figure-special-offers {
@@ -117,8 +112,21 @@
       font-family: variables.$secondary-font-family;
       font-size: 40px;
     }
+
+    &__price-container {
+      display: flex;
+      align-items: center;
+      gap: 69.33px;
+
+      &__text {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
   }
 }
+
 @media (max-width: 767px) {
   .cities {
     display: flex;
@@ -131,7 +139,6 @@
     padding-bottom: 100px;
 
     &--special-offers {
-      justify-content: center;
       gap: 32px;
     }
 
@@ -193,6 +200,18 @@
       color: variables.$secondary-font-color;
     }
 
+    &__star-container {
+      display: flex;
+      padding-top: 8px;
+      gap: 4px;
+    }
+
+    &__text-star {
+      color: variables.$star-background-color;
+      width: 24px;
+      height: 24px;
+    }
+
     &__text-offers {
       color: variables.$primary-font-color;
       font-family: variables.$secondary-font-family;
@@ -202,6 +221,17 @@
 
     &__figure-special-offers {
       padding: 20px;
+    }
+
+    &__price-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &__text {
+        display: flex;
+        gap: 8px;
+      }
     }
 
     &__from-text {

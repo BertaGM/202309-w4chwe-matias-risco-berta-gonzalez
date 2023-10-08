@@ -34,7 +34,18 @@
 
   &--medium {
     border-radius: 12px;
-    padding: 20px 40px;
+    padding: 16px 24px;
+    width: 127px;
+    height: 56px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: variables.$secondary-font-family;
+
+    @media (min-width: 767px) {
+      padding: 20px 40px;
+      width: 159px;
+      height: 64px;
+    }
   }
 
   &--big {
