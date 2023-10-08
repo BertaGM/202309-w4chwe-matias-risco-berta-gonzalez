@@ -53,3 +53,19 @@
     transform: rotate(90deg);
   }
 }
+
+.button-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  margin-top: 100px;
+}
+
+@media (max-width: 767px) {
+  .button-container__phone {
+    &--hide {
+      display: none;
+    }
+  }
+}
