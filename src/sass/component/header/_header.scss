@@ -17,7 +17,7 @@
     width: 320px;
 
     &--reverse {
-      flex-direction: row-reverse;
+      flex-direction: row;
     }
   }
 
@@ -60,6 +60,9 @@
   .header {
     display: flex;
     flex-direction: row;
+    &--reverse {
+      flex-direction: row-reverse;
+    }
   }
 
   .header-container {
@@ -69,7 +72,7 @@
     flex: 1 0 0;
 
     &--reverse {
-      flex-direction: row-reverse;
+      align-items: flex-end;
     }
   }
 
