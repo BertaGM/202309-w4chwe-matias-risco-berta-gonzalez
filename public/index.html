@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c18e08df47.js"></script>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
@@ -33,17 +34,16 @@
           </div>
         </div>
         <section class="button-container button-container__phone--hide">
+          <i class="fa-solid fa-chevron-down button button--solid--black button--small button--rotate-clockwise"></i>
           <i
-            class="buttons_button fa-solid fa-chevron-down button button--solid--black button--small button--small-right button--rotate-clockwise"></i>
-          <i
-            class="buttons_button fa-solid fa-chevron-down button button--solid--orange button--small button--small-left button--rotate-anticlockwise"></i>
+            class="fa-solid fa-chevron-down button button--solid--orange button--small button--rotate-anticlockwise"></i>
         </section>
       </header>
       <section>
         <ul class="cities">
           <li>
             <figure class="card">
-              <img class="card__image" src="/image/berlin.webp" alt="monument of Berlin" width="661" height="497">
+              <img class="card__image" src="./image/berlin.webp" alt="monument of Berlin" width="661" height="497">
               <figcaption class="card__text">
                 <span class="card__text--big">
                   Monument of Berlin</span>
@@ -56,7 +56,8 @@
           </li>
           <li>
             <figure class="card">
-              <img class="card__image" src="/image/london.webp" alt="Millennium bridge London" width="661" height="497">
+              <img class="card__image" src="./image/london.webp" alt="Millennium bridge London" width="661"
+                height="497">
               <figcaption class="card__text">
                 <span class="card__text--big">
                   Millennium Bridge</span>
@@ -96,10 +97,8 @@
         </ul>
       </section>
       <section class="button-container__phone--bottom button-container__desktop--hide">
-        <i
-          class="buttons_button fa-solid fa-chevron-down button button--solid--black button--small button--small-right button--rotate-clockwise"></i>
-        <i
-          class="buttons_button fa-solid fa-chevron-down button button--solid--orange button--small button--small-left button--rotate-anticlockwise"></i>
+        <i class="fa-solid fa-chevron-down button button--solid--black button--small button--rotate-clockwise"></i>
+        <i class="fa-solid fa-chevron-down button button--solid--orange button--small button--rotate-anticlockwise"></i>
       </section>
     </article>
     <article>
@@ -110,99 +109,105 @@
               Special Offer
             </h2>
           </div>
-          <div class="color-line">
-            <div class="gap-line"></div>
+          <div class="color-line color-line--special">
           </div>
-
           <div class="text-container">
             <p class="text">
               Check out our special offer and discounts </p>
           </div>
         </div>
-        <section class="button-container">
-          <div class="buttons">
-            <button
-              class="buttons_button fa-solid fa-chevron-down button button--solid--black button--small button--small-left button--rotate-clockwise"></button>
-            <button
-              class="buttons_button fa-solid fa-chevron-down button button--solid--orange button--small button--small-right button--rotate-anticlockwise"></button>
-          </div>
+        <section class="button-container button-container__phone--hide">
+          <i class="fa-solid fa-chevron-down button button--solid--black button--small button--rotate-clockwise"></i>
+          <i
+            class="fa-solid fa-chevron-down button button--solid--orange button--small button--rotate-anticlockwise"></i>
         </section>
       </header>
       <section>
-        <ul class="cities">
+        <ul class="cities cities--special-offers">
           <li>
-            <figure class="card">
-              <img class="card__image__special-offer" src="./image/offer_1.webp" alt="Lisbon, Portugal" width="437.33"
+            <figure class="card card__background">
+              <img class="card__image__special-offer" src="image/lisbon.webp" alt="Lisbon, Portugal" width="437.33"
                 height="286">
-              <figcaption>
-                <div>
+              <figcaption class="card__figure-special-offers">
+                <div class="card__text-title">
                   Lisbon, Portugal
                 </div>
                 <div>
-                  5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
-                  renaissance.
-                  Passage and
-                  going through the cites of the world in classical literature.
+                  <p class="card__text-offers">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very
+                    popular
+                    during the
+                    renaissance.
+                    Passage and
+                    going through the cites of the world in classical literature.
+                  </p>
                 </div>
-                <div>
-                  <div>
-                    <div>From</div>
-                    <div>€500</div>
+                <div class="button-container">
+                  <div class="button-container button-container--null-gap">
+                    <div class="card__from-text">From</div>
+                    <div class="card__special-offers-price-text">€500</div>
                   </div>
-                  <button>Details</button>
+                  <button class="button button--solid--orange button--medium">Details</button>
                 </div>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
-              <img class="card__image__special-offer" src="./image/offer_2.webp" alt="Athens, Greece" width="437.33"
+            <figure class="card card__background">
+              <img class="card__image__special-offer" src="./image/athens.webp" alt="Athens, Greece" width="437.33"
                 height="286">
-              <figcaption>
-                <div>
+              <figcaption class="card__figure-special-offers">
+                <div class="card__text-title">
                   Athens, Greece
                 </div>
                 <div>
-                  5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
-                  renaissance.
-                  Passage and
-                  going through the cites of the world in classical literature.
+                  <p class="card__text-offers">
+                    5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
+                    renaissance.
+                    Passage and
+                    going through the cites of the world in classical literature.
+                  </p>
                 </div>
                 <div>
                   <div>
-                    <div>From</div>
-                    <div>€800</div>
+                    <div class="card__from-text">From</div>
+                    <div class="card__special-offers-price-text">€800</div>
                   </div>
-                  <button>Details</button>
+                  <button class="button button--solid--orange button--medium">Details</button>
                 </div>
               </figcaption>
             </figure>
           </li>
           <li>
-            <figure>
-              <img class="card__image__special-offer" src="./image/offer_3.webp" alt="Rome, Italy" width="437.33"
+            <figure class="card card__background">
+              <img class="card__image__special-offer" src="./image/rome.webp" alt="Rome, Italy" width="437.33"
                 height="286">
-              <figcaption>
-                <div>
+              <figcaption class="card__figure-special-offers">
+                <div class="card__text-title">
                   Rome, Italy
                 </div>
                 <div>
-                  5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
-                  renaissance.
-                  Passage and
-                  going through the cites of the world in classical literature.
+                  <p class="card__text-offers">
+                    5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
+                    renaissance.
+                    Passage and
+                    going through the cites of the world in classical literature.
+                  </p>
                 </div>
                 <div>
                   <div>
-                    <div>From</div>
-                    <div>€750</div>
+                    <div class="card__from-text">From</div>
+                    <div class="card__special-offers-price-text">€750</div>
                   </div>
-                  <button>Details</button>
+                  <button class="button button--solid--orange button--medium">Details</button>
                 </div>
               </figcaption>
             </figure>
           </li>
         </ul>
+      </section>
+      <section class="button-container__phone--bottom button-container__desktop--hide">
+        <i class="fa-solid fa-chevron-down button button--solid--black button--small button--rotate-clockwise"></i>
+        <i class="fa-solid fa-chevron-down button button--solid--orange button--small button--rotate-anticlockwise"></i>
       </section>
     </article>
   </main>
