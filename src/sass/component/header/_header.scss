@@ -21,6 +21,10 @@
     }
   }
 
+  .title-container {
+    padding-bottom: 15px;
+  }
+
   .title {
     font-family: variables.$main-font-family;
     color: variables.$primary-font-color;
@@ -41,11 +45,8 @@
     background-color: variables.$primary-dark-color;
     height: 3px;
     width: 227px;
-    gap: 20px;
-
-    &__gap-line {
-      gap: 30px;
-    }
+    margin-top: 20px;
+    margin-bottom: 32px;
   }
 }
 
@@ -75,6 +76,10 @@
     }
   }
 
+  .title-container {
+    padding-bottom: 15px;
+  }
+
   .title {
     font-family: variables.$main-font-family;
     color: variables.$primary-font-color;
@@ -95,11 +100,8 @@
     background-color: variables.$primary-dark-color;
     height: 3px;
     width: 365px;
-    gap: 20px;
-
-    &__gap-line {
-      gap: 30px;
-    }
+    margin-top: 20px;
+    margin-bottom: 32px;
   }
 
   .button-container {

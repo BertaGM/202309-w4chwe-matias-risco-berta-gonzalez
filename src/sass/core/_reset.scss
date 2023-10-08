@@ -1,6 +1,6 @@
 *,
 ::after,
-::before{
+::before {
   box-sizing: border-box;
 }
 
@@ -8,23 +8,33 @@ body,
 h1,
 h2,
 h3,
-p{
+p {
   margin: 0;
 }
 
-ul{
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   font: inherit;
 }
 
-button{
+button {
   border: none;
   background: transparent;
   font: inherit;
+}
+
+img {
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+figure {
+  margin: 0;
 }
