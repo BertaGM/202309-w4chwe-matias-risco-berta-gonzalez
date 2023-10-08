@@ -11,6 +11,11 @@
     padding-top: 100px;
     padding-bottom: 100px;
 
+    &--special-offers {
+      justify-content: center;
+      gap: 32px;
+    }
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -22,6 +27,7 @@
     height: 661px;
     object-fit: cover;
     position: relative;
+    filter: sepia(0.2%);
     &__special-offer {
       &__container-button {
         display: flex;
@@ -46,6 +52,8 @@
 
     &__image {
       &__special-offer {
+        display: flex;
+        justify-content: center;
         width: 437.33px;
         height: 286px;
         border-radius: 26px 26px 0 0;
@@ -74,6 +82,41 @@
         flex: 1 0 0;
       }
     }
+
+    &__background {
+      background-color: variables.$background-color-special-offer;
+      width: 437.33px;
+    }
+
+    &__text-title {
+      font-family: variables.$special-offert-title-font;
+      font-size: 28px;
+      color: variables.$secondary-font-color;
+    }
+
+    &__text-offers {
+      color: variables.$primary-font-color;
+      font-family: variables.$secondary-font-family;
+      font-size: 18px;
+      padding: 24px;
+    }
+
+    &__figure-special-offers {
+      padding: 40px 24px;
+    }
+
+    &__from-text {
+      color: variables.$secondary-font-color;
+      font-family: variables.$secondary-font-family;
+      font-size: 20px;
+      padding-right: 8px;
+    }
+
+    &__special-offers-price-text {
+      color: variables.$primary-dark-color;
+      font-family: variables.$secondary-font-family;
+      font-size: 40px;
+    }
   }
 }
 @media (max-width: 767px) {
@@ -87,6 +130,11 @@
     padding-top: 100px;
     padding-bottom: 100px;
 
+    &--special-offers {
+      justify-content: center;
+      gap: 32px;
+    }
+
     &::-webkit-scrollbar {
       display: none;
     }
@@ -98,6 +146,17 @@
     height: 320px;
     object-fit: cover;
     position: relative;
+    filter: sepia(0.2%);
+
+    &__image {
+      &__special-offer {
+        display: flex;
+        justify-content: center;
+        width: 288px;
+        height: 286px;
+        border-radius: 26px 26px 0 0;
+      }
+    }
 
     &__text {
       display: flex;
@@ -120,6 +179,42 @@
         font-size: 18px;
         flex: 1 0 0;
       }
+    }
+
+    &__background {
+      background-color: variables.$background-color-special-offer;
+      width: 288px;
+      height: auto;
+    }
+
+    &__text-title {
+      font-family: variables.$special-offert-title-font;
+      font-size: 28px;
+      color: variables.$secondary-font-color;
+    }
+
+    &__text-offers {
+      color: variables.$primary-font-color;
+      font-family: variables.$secondary-font-family;
+      font-size: 16px;
+      padding: 24px;
+    }
+
+    &__figure-special-offers {
+      padding: 20px;
+    }
+
+    &__from-text {
+      color: variables.$secondary-font-color;
+      font-family: variables.$secondary-font-family;
+      font-size: 18px;
+      padding-right: 8px;
+    }
+
+    &__special-offers-price-text {
+      color: variables.$primary-dark-color;
+      font-family: variables.$secondary-font-family;
+      font-size: 32px;
     }
   }
 }

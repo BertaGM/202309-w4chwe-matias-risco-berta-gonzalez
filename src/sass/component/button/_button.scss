@@ -1,7 +1,7 @@
 @use "../../variables/variables";
 
 .button {
-  color: #fff;
+  color: variables.$light-font-color;
   font: optional;
   &--trasparent {
     background-color: transparent;
@@ -59,6 +59,10 @@
   align-items: center;
   gap: 32px;
   align-self: stretch;
+
+  &--null-gap {
+    gap: 0px;
+  }
 
   @media (max-width: 767px) {
     &__phone {
