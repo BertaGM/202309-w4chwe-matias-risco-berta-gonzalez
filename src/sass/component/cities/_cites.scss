@@ -212,7 +212,7 @@
       color: variables.$primary-font-color;
       font-family: variables.$secondary-font-family;
       font-size: 16px;
-      padding: 24px;
+      padding: 24px 0;
     }
 
     &__figure-special-offers {
@@ -227,6 +227,7 @@
       &__text {
         display: flex;
         gap: 8px;
+        align-items: center;
       }
     }
 
